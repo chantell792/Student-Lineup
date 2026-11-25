@@ -40,5 +40,10 @@ int main()
     {
         currentLastName = newlyReadName;
     }
+    std::cout << "Student Count: " << studentCount << std::endl;
+    std::cout << "First Name: " << currentFirstName << std::endl;
+    std::cout << "Last Name: " << currentLastName << std::endl;
+    inputFile.close();
+}
     return 0;
 }
