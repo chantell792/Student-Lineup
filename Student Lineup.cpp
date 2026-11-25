@@ -3,15 +3,16 @@
 // Student Lineup
 #include <iostream>
 #include <fstream>
+#include <string>
 
 int main()
 {
     std::cout << "Student Lineup\n";
     std::ifstream inputFile;
     int studentCount;
-    int newlyReadName;
-    int currentFirstName;
-    int currentLastName;
+    std::string newlyReadName;
+    std::string currentFirstName;
+    std::string currentLastName;
 
     inputFile.open("LineUp.txt");
     if (inputFile.fail())
