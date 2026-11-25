@@ -25,9 +25,9 @@ int main()
         inputFile >> newlyReadName;
     }
 
-    std::string currentFirstName = newlyReadName;
-    std::string currentLastName = newlyReadName;
-    int studentCount = 1;
+    currentFirstName = newlyReadName;
+    currentLastName = newlyReadName;
+    studentCount = 1;
 
     while (inputFile >> newlyReadName)
     {
