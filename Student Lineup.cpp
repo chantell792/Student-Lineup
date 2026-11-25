@@ -25,26 +25,25 @@ int main()
         inputFile >> newlyReadName;
     }
 
-    int currentFirstName = newlyReadName;
-    int currentLastName = newlyReadName;
+    std::string currentFirstName = newlyReadName;
+    std::string currentLastName = newlyReadName;
     int studentCount = 1;
 
     while (inputFile >> newlyReadName)
     {
         studentCount = studentCount + 1;
-    }
-    if (newlyReadName < currentFirstName)
-    {
-        currentFirstName = newlyReadName;
-    }
-    else if (newlyReadName > currentLastName)
-    {
-        currentLastName = newlyReadName;
+        if (newlyReadName < currentFirstName)
+        {
+            currentFirstName = newlyReadName;
+        }
+        else if (newlyReadName > currentLastName)
+        {
+            currentLastName = newlyReadName;
+        }
     }
     std::cout << "Student Count: " << studentCount << std::endl;
     std::cout << "First Name: " << currentFirstName << std::endl;
     std::cout << "Last Name: " << currentLastName << std::endl;
     inputFile.close();
-}
     return 0;
 }
